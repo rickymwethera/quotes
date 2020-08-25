@@ -1,27 +1,22 @@
-# Quotes
+# QUOTES APPLICATION
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
+#### By Ricky Mwethera
+## Live Link
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Description
+This is a web application that allows a user to view quotes as well as write their own. the user can also upvote quotes that he/she finds inspiring and downvote those that don't
+## Setup/Installation Requirements
+* Fork from github repository: 
+* open/work on the files using your text editor of choice
+* Run via terminal using the command [ng serve] to launch the webapp
+## Known Bugs
+* Delete function does not work at the moment
+* Like function does not work
+## Technologies Used
+* Angular CLI for code hosting
+* Chrome broswer to launch the app
+* For this project, I used HTML, CSS, Bootstrap, Angular js
+## Support and contact details
+To report any errors or offer to contribute please feel free to contact me at : rickymwethera@gmail.com
+### License
+Copyright (c) 2020
