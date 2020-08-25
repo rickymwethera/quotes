@@ -3,21 +3,23 @@
     <div class="jumbotron">
       <p>Life Quotes!</p>
       <h6>Sharing memorable quotes</h6>
+      <hr>
     </div>
-    <div class="page">
-
+    <div class="col-md-6" id="custom">
+      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
+  </div>
+</div>
+<div class="form">
 <ul>
   <div *ngFor='let quote of quotes;let i = index'>
-   <li>{{quote.name}}</li> <br> <p>Added on {{quote.completeDate|dateCount}}</p>
-   <button (click)='toggleQuote(true)' class="btn btn-primary">Toggle Details</button>
-   
-   
-   <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'toggleQuote($event,i)'></app-quote-detail>
- </div>
+   <li>{{quote.description}}</li> <p>Added on {{quote.completeDate|date}}</p>
+   <button (click)='toggleQuote()' class="btn btn-primary">Toggle Details</button>
+<br>
+   <app-quote-detail *ngIf='quotes.showName' [quote]='quote' (isComplete) = 'toggleQuote($event,i)'></app-quote-detail> 
+  </div>
 </ul>
+   
 <div class="col-md-2"></div>
-<div class="col-md-6">
-  <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-</div>
-</div>
+
 </div>
