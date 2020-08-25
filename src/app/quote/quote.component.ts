@@ -9,9 +9,9 @@ import { Quote } from '../quote'
 })
 export class QuoteComponent implements OnInit {
   quotes = [
-    new Quote(1, 'Nelson Mandela', 'Do not take advice from someone who has not been in your shoes.', 'admin', new Date(1990, 5, 10)),
-    new Quote(2, 'Mahatma Gandhi', 'Do not judge me by my past, I do not live there anymore.', 'admin', new Date(1950, 3, 23)),
-    new Quote(3, 'Ricky Gichuhi', 'Hard work always pays', 'admin', new Date(2012, 8, 17)),
+    new Quote(1, 'Nelson Mandela', 'Do not take advice from someone who has not been in your shoes.', 'admin', new Date(2019, 5, 10)),
+    new Quote(2, 'Mahatma Gandhi', 'Do not judge me by my past, I do not live there anymore.', 'admin', new Date(2018, 3, 23)),
+    new Quote(3, 'Ricky Gichuhi', 'Hard work always pays', 'admin', new Date(2019, 8, 17)),
   ]
 
   
