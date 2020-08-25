@@ -2,7 +2,7 @@
 
 #### By Ricky Mwethera
 ## Live Link
-
+https://rickymwethera.github.io/quotes/
 ## Description
 This is a web application that allows a user to view quotes as well as write their own. the user can also upvote quotes that he/she finds inspiring and downvote those that don't
 ## Setup/Installation Requirements
