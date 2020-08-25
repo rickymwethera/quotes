@@ -8,7 +8,7 @@
     background-color: darkgrey;
 }
 body {
-    background-image: url('/src/assets/quote1.png');
+    
     background-repeat: no-repeat;
     background-size: 2050px 1000px;
     margin: 0em;
@@ -22,7 +22,7 @@ body {
     text-align: center;
     background-color: brown;
 }
-#custom {
+.custom {
     text-align: center;
     background-image: url('/assets/quote1.png');
     background-size: 1900px 500px;
