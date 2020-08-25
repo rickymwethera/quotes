@@ -1,19 +1,23 @@
-<body>
+<div class="body">
 <div class="container" id="thee">
     <div class="jumbotron">
       <p>Life Quotes!</p>
       <h6>Sharing memorable quotes</h6>
     </div>
+    <div class="page">
 
 <ul>
   <div *ngFor='let quote of quotes;let i = index'>
-   <li>{{quote.name}} <br> Appended on {{quote.completeDate|date}}</li>
-   <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
-   <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
+   <li>{{quote.name}}</li> <br> <p>Added on {{quote.completeDate|dateCount}}</p>
+   <button (click)='toggleQuote(true)' class="btn btn-primary">Toggle Details</button>
+   
+   
+   <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'toggleQuote($event,i)'></app-quote-detail>
  </div>
 </ul>
+<div class="col-md-2"></div>
 <div class="col-md-6">
-  <app-quote-form></app-quote-form>
+  <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 </div>
-  
-  
+</div>
+</div>

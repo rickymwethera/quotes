@@ -1,24 +1,24 @@
 <div class="container-fluid">
   <h2 class="text-center">Create a new Goal</h2>
   
-  <form #quoteForm='ngForm'>
+  <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
       <div class="form-group" id="naming">
 
-          <label for="name">Name</label>
+          <label for="name">NAME</label><br>
           <input type="name" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
           <div [hidden] = "name.valid || name.pristine" class="alert alert-danger"><p>Name is required</p></div><br><br><br>
             Display: {{newQuote.name}}
       </div><br><br>
       <div class="form-group" id="description">
 
-          <label for="description">Quote</label>
-          <textarea class="form-control" id="description" rows="4" placeholder="Give us your best Quote" [(ngModel)]="newQuote.description" name="description" #description="ngModel" required></textarea>
+          <label for="description">QUOTE</label><br>
+          <textarea class="form-control" id="description"  placeholder="Give us your best Quote" [(ngModel)]="newQuote.description" name="description" #description="ngModel" required></textarea>
           <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
             <p>Quote is needed!</p>
           </div>
       </div><br><br>
       <div class="form-group" id="completion">
-          <label for="complete">Completion</label>
+          <label for="complete">DATE</label><br>
           <input type='date' id="date" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
           <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
             <p>Date is required!</p>

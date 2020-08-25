@@ -2,7 +2,7 @@
     align-content: center;
     text-align: center;
     
-    color: black;
+    color: white;
     font-weight: bold;
     margin-bottom: 0;
     font-size: 50px;
@@ -10,5 +10,11 @@
 body {
     background-image: url('/assets/quote1.png');
     background-repeat: no-repeat;
-    background-size: 2000px 1000px;
+    background-size: 2050px 1000px;
+    margin: 0em;
+    color: white;
+    
+}
+.page {
+    margin-left: 3rem;
 }
