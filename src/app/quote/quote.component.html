@@ -15,9 +15,10 @@
 <ul>
   <div *ngFor='let quote of quotes;let i = index'>
    <li>{{quote.description}}</li> <p>Added on {{quote.completeDate|date}}</p>
-   <button (click)='toggleQuote()' class="btn btn-primary">Toggle Details</button>
-<br>
-   <app-quote-detail *ngIf='quotes.showDescription' [quote]='quote' (isComplete) = 'toggleQuote($event,i)'></app-quote-detail> 
+   <button (click)='toggleQuote(i)'>Details</button>
+
+   <app-quote-details *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-details> 
+
   </div>
 </ul>
    
