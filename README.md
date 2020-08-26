@@ -11,7 +11,7 @@ This is a web application that allows a user to view quotes as well as write the
 * Run via terminal using the command [ng serve] to launch the webapp
 ## Known Bugs
 * Delete function does not work at the moment
-* Like function does not work
+
 ## Technologies Used
 * Angular CLI for code hosting
 * Chrome broswer to launch the app
