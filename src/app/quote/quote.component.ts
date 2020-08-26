@@ -8,11 +8,13 @@ import { Quote } from '../quote'
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  quotes = [
+  
+    quotes:Quote[] = [
     new Quote(1, 'Nelson Mandela', 'Do not take advice from someone who has not been in your shoes.', 'admin', new Date(2019, 5, 10)),
     new Quote(2, 'Mahatma Gandhi', 'Do not judge me by my past, I do not live there anymore.', 'admin', new Date(2018, 3, 23)),
     new Quote(3, 'Ricky Gichuhi', 'Hard work always pays', 'admin', new Date(2019, 8, 17)),
   ]
+
 
   
 
@@ -32,8 +34,9 @@ export class QuoteComponent implements OnInit {
    }
 
    toggleQuote(index) {
-     this.quotes[index].showDescription = !this.quotes[index].showDescription;
-  }
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+   }
+  
 
 
 

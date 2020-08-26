@@ -9,14 +9,18 @@ import { Quote } from '../quote';
 export class QuoteDetailsComponent implements OnInit {
 
   @Input() quote: Quote;
+  @Input() quotes: Quote;
   @Output() isComplete = new EventEmitter<boolean>();//transmits to the delete trigger from parent component on delete function
 
   quoteDelete(complete: boolean) {
     this.isComplete.emit(complete);
   }
- 
+  toggleQuote(index){
+    this.quote[index].showDescription = !this.quote[index].showDescription;
+  }
 
-  
+
+
   ngOnInit() {
   }
 
