@@ -5,11 +5,15 @@
       <h6>Sharing memorable quotes</h6>
       <hr>
     </div>
+    <div class="row">
+      <div class="col-md-4">
     <div class="custom">
       <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
   </div>
+  </div>
 </div>
+<div class="col-md-4">
 <div class="form">
   <p><b><u>BEST QUOTES</u></b></p>
 <ul>
@@ -25,5 +29,6 @@
 </ul>
    
 <div class="col-md-2"></div>
-
+</div>
+</div>
 </div>

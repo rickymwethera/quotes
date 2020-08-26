@@ -22,9 +22,10 @@ body {
     text-align: center;
     background-color: brown;
 }
-#custom {
+.custom {
     text-align: center;
     background-image: url('/assets/quote1.png');
+    background-color: darkturquoise;
     background-size: 1900px 500px;
     background-repeat: no-repeat;
 }
